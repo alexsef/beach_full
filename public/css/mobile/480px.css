@@ -1,0 +1,17 @@
+@media (max-width: 480px) {
+	.navbar-brand {
+		padding: 0!important;
+		height: 16px;
+	}
+	.navbar-brand > img {
+		height: 47px!important;
+		margin-left: -37px;
+		margin-top: 0!important;
+	}
+	.book-head {
+		margin-top: 5vw!important;
+	}
+	.feedback input {
+		width: 100%!important;
+	}
+}

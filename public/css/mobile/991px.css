@@ -1,0 +1,62 @@
+@media (max-width: 991px) {
+    .reserve-field {
+        width: 100vw;
+        left: 0;
+        margin-left: 0;
+        position: absolute;
+    }
+    .blur-content {
+        filter: blur(0)!important;
+    }
+    .comment .img-circle {
+        width: 157px;
+        height: 157px;
+        top: 29px;
+        left: 57px;
+    }
+    .comment .img-circle {
+        width: 158px!important;
+        height: 158px!important;
+        position: absolute;
+        top: 30px!important;
+        left: 57px!important;
+    }
+    .comment .text {
+        padding-right: 25px!important;
+    }
+    .comment>div {
+        left: 260px!important;
+    }
+    .feedback .check-kind {
+        position: initial!important;
+        padding-bottom: 30px!important;
+    }
+    .check-kind ul {
+        padding: 0!important;
+    }
+    .feedback {
+        margin-top: 100px;
+    }
+    .feedback .check-kind {
+        margin-left: 0!important;
+    }
+    .feedback img {
+        display: none!important;
+    }
+    .kind-item {
+        margin-bottom: 25px;
+    }
+    .gallery {
+        margin-top: 0px!important;
+    }
+    .my-gallery .swiper-container {
+        width: 100%;
+    }
+    .footer-data {
+        text-align: center;
+    }
+    .footer-data>div {
+        padding: 0!important;
+        width: 100%!important;
+    }
+}

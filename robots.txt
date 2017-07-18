@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /img
+Allow: /resources/views/pages
+Disallow: /app
+Disallow: /bootstrap
+Disallow: /config
+Disallow: /database
+Disallow: /fonts
+Disallow: /public
+Disallow: /resources
+Disallow: /routes
+Disallow: /storage
+Disallow: /tests
+Disallow: /vendor
+
+User-agent: Yandex
+Allow: /img
+Allow: /resources/views/pages
+Disallow: /app
+Disallow: /bootstrap
+Disallow: /config
+Disallow: /database
+Disallow: /fonts
+Disallow: /public
+Disallow: /resources
+Disallow: /routes
+Disallow: /storage
+Disallow: /tests
+Disallow: /vendor
+
+Host: https://plyazhspb.ru
+Sitemap: https://plyazhspb.ru/sitemap.xml

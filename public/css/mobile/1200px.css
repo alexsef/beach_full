@@ -1,0 +1,113 @@
+@media (max-width: 1200px) {
+    .reserve {
+        display: none;
+    }
+    .carousel-caption {
+        /*display: none;*/
+    }
+    .navbar-toggle {
+        right: -45px;
+        padding: 18px 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #ffa114;
+        border: 0;
+        border-radius: 0;
+        margin-right: 0;
+    }
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background-color: #ef950f!important;
+    }
+    .navbar-toggle span.icon-bar {
+        background-color: #fff !important;
+    }
+    .comment .img-circle {
+        width: 205px;
+        height: 205px;
+        top: 39px;
+        left: 71px;
+    }
+    .navbar-brand {
+        padding: 0!important;
+        height: 16px;
+    }
+    .navbar-brand>img {
+        height: 47px!important;
+        margin-left: -37px;
+        margin-top: 0;
+    }
+    .book-head {
+        margin-top: 5vw!important;
+    }
+    .navbar-toggle {
+        right: -61px;
+    }
+    .comment .img-circle {
+        width: 205px!important;
+        height: 205px!important;
+        position: absolute;
+        top: 39px!important;
+        left: 71px!important;
+    }
+    .comment .text {
+        padding-right: 30px!important;
+    }
+    .comment>div {
+        left: 340px!important;
+    }
+    .feedback .check-kind {
+        top: 115px!important;
+    }
+    .check-kind ul {
+        padding: 0!important;
+    }
+    .services>div p {
+        font-size: 1em!important;
+    }
+    .header-data {
+        display: none!important;
+    }
+    .auth {
+        display: none!important;
+    }
+    .carousel-caption {
+        bottom: 0!important;
+        top: 0!important;
+        left: 0!important;
+        right: 0!important;
+        padding: 0!important;
+    }
+    .carousel-caption img {
+        display: block!important;
+        margin: 0 auto!important;
+        height: 100%!important;
+    }
+    .corporate-block {
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+        margin-top: 0!important;
+    }
+    .corporate>div button {
+        background-color: #ffa114;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 0;
+        box-shadow: 0px 3px #ce8210;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/** МОБИЛЬНАЯ КАРТА **/
+
+@media(min-width: 1200px) {
+    .container.book {
+        display: none;
+    }
+    .corporate>div button {
+        display: none;
+    }
+}

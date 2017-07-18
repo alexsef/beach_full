@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+    opacity: 0; }
+    .mobile-menu:active {
+      opacity: 0; } }
+.mobile-menu {
+  display: none; }
+  .mobile-menu #sports,
+  .mobile-menu #info {
+    display: block;
+    transition: 0.5s;
+    transform: translateX(100%); }
+    .mobile-menu #sports li,
+    .mobile-menu #info li {
+      display: block; }
+      .mobile-menu #sports li i,
+      .mobile-menu #info li i {
+        float: left;
+        margin-right: 10px; }
+  .mobile-menu ul {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer; }
+    .mobile-menu ul li {
+      display: none;
+      padding: 5px 0; }
+      .mobile-menu ul li i {
+        float: right; }
+      .mobile-menu ul li a {
+        display: block;
+        color: #fff; }
+        .mobile-menu ul li a:active, .mobile-menu ul li a:hover {
+          color: #ffa114; }
+
+.my-gallery .swiper-slide {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: #fff;
+  overflow: hidden; }
+
+/*# sourceMappingURL=plyazh.css.map */

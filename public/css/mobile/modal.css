@@ -1,0 +1,134 @@
+.mobile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+
+    padding-bottom: 70px;
+    /*transform: translateY(100vh);*/
+}
+.mobile-modal .header {
+	background-color: #439600;
+}
+.mobile-modal .header i {
+    color: #fff;
+    font-size: 2em;
+    padding: 2vw 5vw;
+    display: block;
+}
+.mobile-modal span {
+    display: block;
+    font-size: 1.5em;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #fff;
+    padding: 4% 0px;
+}
+.modal-body {
+    padding: 0 6vw;
+}
+.mobile-modal .select-field {
+	font-family: roboto;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+.select-field i {
+	float: right;
+    font-size: 1.5em;
+}
+.mobile-modal hr {
+	margin-top: 0;
+}
+.mobile-modal .dates input {
+    width: 100%;
+    font-size:14px;
+    padding:10px 10px 10px 5px;
+    display:block;
+   /* border:none;
+    border-bottom:1px solid #e9e9e9;*/
+}
+.mobile-modal .dates input:focus, .modal-input input:focus {
+    outline:none;
+}
+.mobile-modal .dates label {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+.modal-input {
+    width: 100%;
+    font-size: 240%;
+    margin-top: 20px;
+    border:0;
+    border-bottom: 1px solid #e9e9e9;
+    outline: none;
+}
+.modal-button {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background-color: transparent;
+    border: 0px;
+    font-family: roboto;
+    font-weight: 500;
+    color: #2d78f3;
+    outline: none;
+}
+.mobile-range .mobile-prog {
+    background-color: #00964a;
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    height: 31px;
+}
+.mobile-range i {
+    position: absolute;
+    right: 0;
+    color: #0e5632;
+}
+.mobile-range ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mobile-range from, .mobile-range to {
+    font-size: 70%;
+    color: #fff;
+    position: absolute;
+    top: 5px; 
+}
+.mobile-range from {
+    font-size: 70%;
+    color: #Fff;
+    left: 25px;
+}
+.mobile-range to {
+    position: absolute;
+    right: 25px;
+}
+.mobileAlert {
+    background-color: #ec3636;
+    color: #fff;
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+}

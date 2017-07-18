@@ -1,0 +1,18 @@
+@media (max-width: 800px) {
+	.navbar-brand {
+		padding: 0!important;
+		height: 16px;
+	}
+	.navbar-brand > img {
+		height: 47px!important;
+		margin-left: -37px;
+		margin-top: 0;
+	}
+	.book-head {
+		margin-top: 5vw!important;
+	}
+	.navbar-toggle {
+		right: -61px;
+	}
+	
+}

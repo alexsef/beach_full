@@ -1,0 +1,98 @@
+@media (max-width: 320px) {
+	.ball {
+		height: 130px;
+		display: none;
+	}
+	.decoration {
+		display: none;
+	}
+	.carousel-caption {
+		background-image: none;
+		padding: 25px 0 0 0;
+		left: 65px;
+		top: -15px;
+		right: 30px;
+	}
+	.carousel-caption h3 {
+		font-size: 20px;
+	}
+	.carousel-caption p {
+		font-size: 8px;
+	}
+	.carousel-caption img {
+		display: none;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.reserve {
+		background-size: 120%;
+		background-repeat: no-repeat;
+	}
+	.reserve h1 {
+		padding-top: 10px;
+		font-size: 25px;
+	}
+	.reserve .sport {
+		padding: 10px 0;
+   	 	margin: 5px 0;
+	}
+	.sport a {
+		padding: 0 10px;
+    	font-size: 25px;
+	}
+	.sale-box {
+		display: none;
+	}
+	.services {
+		padding-bottom: 0;
+	}
+	.services > div {
+		margin: 180px 30px 0;
+	}
+	.comment > div {
+		position: initial;
+	}
+	.comment > div h1 {
+    	color: #505050;
+	}
+	.check-kind ul li {
+		padding: 0 5px;
+	}
+	.check-btn {
+		margin: 50px -100%;
+	}
+	.comment .text {
+		padding-right: 0;
+	}
+	.feedback input {
+		width: 100%;
+	}
+	.feedback .check-kind {
+		position: initial;
+	}
+	.gallery .item.active img {
+		width: 100%;
+	}
+	.gallery .item {
+		margin: 0;
+	}
+	.img-comment-bg {
+		display: none;
+	}
+	.img-form-bg {
+		display: none;
+	}
+	.navbar-brand {
+		padding: 0!important;
+		height: 16px;
+	}
+	.navbar-brand > img {
+		height: 47px!important;
+		margin-left: -37px;
+		margin-top: 0;
+	}
+	.book-head {
+		margin-top: 8px!important;
+	}
+}
