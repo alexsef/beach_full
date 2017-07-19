@@ -80,6 +80,7 @@
                                     <li><a id="dLabel" data-target="#" href="#"
                                            class="
                                             @if(Request::path() == "page/childrens_sections" or
+                                                Request::path() == "page/our_trainers" or
                                                 Request::path() == "page/adult_sections")
                                                 blue-head
                                             @endif
@@ -91,6 +92,7 @@
                                         <ul class="dropdown-menu drop-sports" aria-labelledby="dLabel">
                                             <li><a href="{{ $prefix }}/page/childrens_sections">Детские секции</a></li>
                                             <li><a href="{{ $prefix }}/page/adult_sections">Взрослые секции</a></li>
+                                            <li><a href="{{ $prefix }}/page/our_trainers">Наши тренеры</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -116,7 +118,6 @@
                                         <a href="#" class="
                                         @if(Request::path() == "page/about" or
                                             Request::path() == "page/gallery" or
-                                            Request::path() == "page/our_trainers" or
                                             Request::path() == "page/news" or
                                             Request::path() == "page/partnership")
                                             blue-head
@@ -129,7 +130,6 @@
                                         <ul class="dropdown-menu drop-sports">
                                             <li><a href="{{ $prefix }}/page/about">О комплексе</a>
                                             <li><a href="{{ $prefix }}/page/gallery">Галерея</a>
-                                            <li><a href="{{ $prefix }}/page/our_trainers">Наши тренеры</a></li>
                                             <li><a href="{{ $prefix }}/page/news">Мероприятия</a></li>
                                             <li><a href="{{ $prefix }}/page/partnership">Сотрудничество</a></li>
                                         </ul>
@@ -162,6 +162,7 @@
                     <ul>
                         <li><a href="/page/childrens_sections">Детские секции</a></li>
                         <li><a href="/page/adult_sections">Взрослые секции</a></li>
+                        <li><a href="/page/our_trainers">Наши тренеры</a></li>
                     </ul>
                 </li>
                 <li><span>Предложения</span>
@@ -175,7 +176,6 @@
                     <ul>
                         <li><a href="/page/about">О комплексе</a></li>
                         <li><a href="/page/gallery">Галерея</a></li>
-                        <li><a href="/page/our_trainers">Наши тренеры</a></li>
                         <li><a href="/page/news">Мероприятия</a></li>
                         <li><a href="/page/partnership">Сотрудничество</a></li>
                     </ul>

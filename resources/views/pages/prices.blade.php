@@ -77,6 +77,7 @@
 
                         {!! $page->content !!}
 
+
                         <!-- ФОРМЫ ЗАЯВОК -->
                         <!-- ДЕТСКИЕ СЕКЦИИ -->
                         <div class="row corporate-block back-block" id="form_">

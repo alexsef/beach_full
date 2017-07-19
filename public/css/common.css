@@ -42,8 +42,38 @@ a.disabled {
     background-color: #fdbc0e;
 }
 
+.item-table {
+    float: left;
+}
+
+.table-center {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.price-table {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price-table thead tr th {
+    font-size: 20px;
+    text-align: center;
+}
+
+.price-table tbody th {
+    text-align: center;
+}
+
 .table>thead>tr>th {
     color: #4286eb;
+}
+
+.price-table tbody th,
+.price-table tbody td {
+    width: 100px !important;
 }
 
 .border-price {
@@ -64,6 +94,108 @@ a.disabled {
 .blue,
 .blue-xs {
     color: #4286eb;
+}
+
+.abs-block {
+    position: absolute;
+}
+
+.h1-top {
+    height: 100px;
+    padding-top: 30px !important;
+    margin-top: 40px !important;
+}
+
+.shares-block-inner {
+    position: relative;
+    float: left;
+    width: 24.1%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.shares-block-inner:last-child {
+    margin-right: 0;
+}
+
+.shares-block-inner > h3 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10px;
+    color: #fff;
+}
+
+.shares-block-inner > h4 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 50px;
+    color: #fff;
+}
+
+.shares-img {
+    width: 100%;
+    opacity: 1;
+}
+
+.cen-btn {
+    width: 100px;
+    margin: auto;
+}
+
+.ghost-button {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    margin-left: 20%;
+    width: 60%;
+    display: inline-block;
+    /*width: 200px;*/
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    opacity: 1;
+}
+.ghost-button:hover,
+.ghost-button:active {
+    background-color: #fff;
+    color: #000;
+    opacity: 0.8;
+}
+
+@media (max-width: 1199px) {
+    .shares-block-inner {
+        width: 23.9%;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .shares-block-inner {
+        width: 48.6%;
+    }
+}
+
+@media (max-width: 743px) {
+    .shares-block-inner {
+        width: 48.1%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 557px) {
+    .shares-block-inner {
+        width: 100%;
+        height: 45%;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -544,6 +676,10 @@ body {
     width: 100%;
     padding: 15px 0;
     font-size: 24px
+}
+
+.reserve {
+    position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -1844,7 +1980,8 @@ body {
 }
 
 .back .story-image-box,
-.back-clear .story-image-box {
+.back-clear .story-image-box,
+.back-clear .story-image-box-x {
     padding-left: 0;
     padding-right: 3px;
     height: 440px;
@@ -1853,6 +1990,8 @@ body {
 }
 
 .back .story-image-box img,
+.back .story-image-box-x img
+.back-clear .story-image-box-x img
 .back-clear .story-image-box img {
     min-height: 341px
 }
@@ -1871,6 +2010,8 @@ body {
     left: 0;
     right: 0
 }
+
+
 
 .back .story-description-box,
 .back-clear .story-description-box {

@@ -7,6 +7,7 @@ use App\Review;
 use App\User;
 use App\Slide;
 use App\Slider;
+use App\Infoslide;
 use Auth;
 use DB;
 use Illuminate\Http\Request;
@@ -26,9 +27,14 @@ class PageController extends Controller
             }
         }
 
+        $slides = Slide::inRandomOrder()->take(10)->get();
+        $infoslides = Infoslide::take(4)->get();
+
         // $reviews = Review::with('user')->where('status', 1)->orderBy('created_at', 'desc')->limit(5)->first();
         return view('pages.index', [
-            'reviews' => $reviews_out
+            'reviews' => $reviews_out,
+            'slides' => $slides,
+            'i_slides' => $infoslides
         ]);
     }
 

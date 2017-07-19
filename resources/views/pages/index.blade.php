@@ -96,12 +96,6 @@
                                     <li><a href="/page/prices">Цены</a></li>
                                     <li><a id="dLabel" data-target="#" href="#"
                                            class="
-                                            @if(Request::path() == "page/" or
-                                                Request::path() == "page/" or
-                                                Request::path() == "page/" or
-                                                Request::path() == "page/")
-                                                blue-head
-                                            @endif
                                            dropdown-toggle dropdown-menu_title"
                                            data-toggle="dropdown" role="button" aria-haspopup="true"
                                            aria-expanded="false">Секции
@@ -110,6 +104,7 @@
                                         <ul class="dropdown-menu drop-sports" aria-labelledby="dLabel">
                                             <li><a href="{{ $prefix }}/page/childrens_sections">Детские секции</a></li>
                                             <li><a href="{{ $prefix }}/page/adult_sections">Взрослые секции</a></li>
+                                            <li><a href="/page/our_trainers">Наши тренеры</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -127,7 +122,6 @@
                                         <ul class="dropdown-menu">
                                             <li><a href="/page/about">О комплексе</a></li>
                                             <li><a href="/page/gallery">Галерея</a></li>
-                                            <li><a href="/page/our_trainers">Наши тренеры</a></li>
                                             <li><a href="/page/news">Мероприятия</a></li>
                                             <li><a href="/page/partnership">Сотрудничество</a></li>
                                         </ul>
@@ -158,6 +152,7 @@
                 <ul>
                     <li><a href="page/childrens_sections">Детские секции</a></li>
                     <li><a href="page/adult_sections">Взрослые секции</a></li>
+                    <li><a href="page/our_trainers">Наши тренеры</a></li>
                 </ul>
             </li>
             <li>Предложения
@@ -171,7 +166,6 @@
                 <ul>
                     <li><a href="page/about">О комплексе</a></li>
                     <li><a href="page/gallery">Галерея</a></li>
-                    <li><a href="page/our_trainers">Наши тренеры</a></li>
                     <li><a href="page/news">Мероприятия</a></li>
                     <li><a href="page/partnership">Сотрудничество</a></li>
                 </ul>
@@ -268,7 +262,7 @@
                 </div>
             </div>
             <img src="img/decoration_up.png" class="decoration-up" alt="">
-            <img src="img/decoration_down.png" class="decoration-down" alt="">
+            <!-- <img src="img/decoration_down.png" class="decoration-down" alt=""> -->
             <!--<img src="img/decoration.png" width="100%" class="decoration">-->
             <div class="sale-box">
                 <a href="#">
@@ -323,10 +317,28 @@
             </div>
         </div>
 
+        <!-- ИНФОРМАЦИОННЫЕ СЛАЙДЫ -->
+        <!-- <div>
+            <div class="container-fluid shares-block">
+                <div class="container ">
+                    <div class="row flex-block">
+                        @foreach($i_slides as $i_slide)
+                            <div class="shares-block-inner">
+                                <img src="<% $i_slide->img %>" class="shares-img img-responsive" alt="" height="260px">
+                                <h3><% $i_slide->title %></h3>
+                                <h4><% $i_slide->text %></h4>
+                                <a class="ghost-button" href="<% $i_slide->link %>">Подробнее</a>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
         <!-- ЗАБРОНИРОВАТЬ ПОЛЕ -->
         <div class="container-fluid reserve">
             <div class="row">
-                <h1>Забронировать площадку в ЦПС "Пляж"</h1>
+                <h1 class="h1-top">Забронировать площадку в ЦПС "Пляж"</h1>
                 <div class="check">Схема площадок по видам спорта:</div>
                 <a name="resfield"></a>
                 <div class="col-md-12 sport">
@@ -537,14 +549,16 @@
         <div class="container-fluid my-gallery" gallery>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="imgInGallery">
-                            <a href="img/gallery/1.jpg" data-lightbox="image-1">
-                                <img src="img/gallery/1.jpg" width="100%">
-                            </a>
+                    @foreach($slides as $slide)
+                        <div class="swiper-slide">
+                            <div class="imgInGallery">
+                                <a href="<% $slide->img %>" data-lightbox="image-1">
+                                    <img src="<% $slide->img %>" width="100%">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    @endforeach
+                    <!-- <div class="swiper-slide">
                         <div class="imgInGallery">
                             <a href="img/gallery/2.jpg" data-lightbox="image-1">
                                 <img src="img/gallery/2.jpg" width="100%">
@@ -571,7 +585,7 @@
                                 <img src="img/gallery/5.jpg" width="100%" alt="">
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -758,7 +772,7 @@
         <div class="box-border">
             <i class="mdi mdi-close mdi-36px" style="top: 4px"></i>
             <div id="auth">
-                <form action="/auth" method="post">
+                <form action="/login" method="post">
                     <%% csrf_field() %%>
                         <h3 style="font-size: 32px">Вход в личный кабинет</h3>
                         <a href="" class="disabled">Вход</a>
