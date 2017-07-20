@@ -23,11 +23,14 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <div class="addr-head"> 
-                                        <i class="fa fa-map-marker" aria-hidden="true" style="color: black;"></i>
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true" style="color: orange;"></i> -->
+                                        <img src="/img/geo.png" style="margin-bottom: 5px" width="13px" alt="">
                                             Санкт-Петербург, улица Фучика, 2А
                                     </div>
                                     <div class="phn-head">
-                                        <div class="phn-phn">8 (812) 911-70-77 &nbsp;</div>      <i class="fa fa-clock-o" aria-hidden="true" style="color: black;"></i> с 10:00 до 23:00
+                                        <div class="phn-phn">8 (812) 911-70-77 &nbsp;
+                                        <img src="/img/clock.png" width="20px" alt="">
+                                         с 10:00 до 23:00</div>
                                     </div>
                                     <div class="auth-head">
                                         @if(Auth::check())

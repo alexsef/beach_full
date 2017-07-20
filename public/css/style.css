@@ -1009,12 +1009,12 @@ body {
 }
 
 .book-all button {
-    background-color: #efe545;
+    background-color: #ffa114;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     padding: 20px 0;
-    box-shadow: 0px 3px #c7bf39;
+    box-shadow: 0px 3px #e48900;
     border-radius: 12px;
 }
 
@@ -1292,7 +1292,6 @@ body {
 
 .story-description-box {
     background: white;
-    height: 440px;
 }
 
 .story-description-box > h2 {
@@ -1497,10 +1496,9 @@ body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc000+0,fbfe00+100 */
     background: rgb(255, 192, 0);
     /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255, 192, 0, 1) 0%, rgba(251, 254, 0, 1) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 192, 0, 1) 0%, rgba(251, 254, 0, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 192, 0, 1)), to(rgba(251, 254, 0, 1)));
     background: linear-gradient(to right, rgba(255, 192, 0, 1) 0%, rgba(251, 254, 0, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffc000', endColorstr='#fbfe00', GradientType=1);
@@ -1508,12 +1506,16 @@ body {
 }
 
 .footer-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 14px;
     font-family: Roboto;
     font-weight: 500;
     height: 75px;
-    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-data>div {

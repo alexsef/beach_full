@@ -59,11 +59,15 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <div class="addr-head"> 
-                                        <i class="fa fa-map-marker" aria-hidden="true" style="color: black;"></i>
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true" style="color: orange;"></i> -->
+                                        <img src="/img/geo.png" style="margin-bottom: 5px" width="13px" alt="">
                                             Санкт-Петербург, улица Фучика, 2А
                                     </div>
+
                                     <div class="phn-head">
-                                        <div class="phn-phn">8 (812) 911-70-77 &nbsp;</div>      <i class="fa fa-clock-o" aria-hidden="true" style="color: black;"></i> с 10:00 до 23:00
+                                        <div class="phn-phn">8 (812) 911-70-77 &nbsp;
+                                        <img src="/img/clock.png" width="20px" alt="">
+                                         с 10:00 до 23:00</div>
                                     </div>
                                     <div class="auth-head">
                                         @if(Auth::check())
@@ -318,22 +322,22 @@
         </div>
 
         <!-- ИНФОРМАЦИОННЫЕ СЛАЙДЫ -->
-        <!-- <div>
+        <div>
             <div class="container-fluid shares-block">
                 <div class="container ">
                     <div class="row flex-block">
                         @foreach($i_slides as $i_slide)
                             <div class="shares-block-inner">
                                 <img src="<% $i_slide->img %>" class="shares-img img-responsive" alt="" height="260px">
-                                <h3><% $i_slide->title %></h3>
-                                <h4><% $i_slide->text %></h4>
+                                <div><h3><% $i_slide->title %></h3></div>
+                                <div><h4><% $i_slide->text %></h4></div>
                                 <a class="ghost-button" href="<% $i_slide->link %>">Подробнее</a>
                             </div>
                         @endforeach
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- ЗАБРОНИРОВАТЬ ПОЛЕ -->
         <div class="container-fluid reserve">
@@ -473,35 +477,16 @@
         <div class="container kinds" kind-sport>
             <div class="row">
                 <div class="col-md-4 kind-item" value="1">
-                    <span>ПЛЯЖНЫЙ ФУТБОЛ</span>
-                    <img src="/img/football.png" width="100%">
-                </div>
-                <div class="col-md-4 kind-item" value="2">
                     <span>ПЛЯЖНЫЙ ВОЛЕЙБОЛ</span>
                     <img src="/img/volleyball.png" width="100%">
                 </div>
-                <div class="col-md-4 kind-item" value="3">
+                <div class="col-md-4 kind-item" value="2">
                     <span>ПЛЯЖНЫЙ ТЕННИС</span>
                     <img src="/img/tennis.png" width="100%">
                 </div>
-            </div>
-            <div class="row">
-                <div class="services">
-                    <h3 style="font-size: 32px">Пляжный футбол</h3>
-                    <div>
-                        <h2>История</h2>
-                        <p>
-                            Пляжный футбол зародился в Бразилии и вырос до уровня вида спорта международного значения. Участие в соревнованиях известных спортсменов из большого футбола, таких как француз Эрик Кантона, испанцев Мигель и Хулио Салинаса и бразильцев Ромарио, Жуниора
-                            и Зико способствовало расширению телевизионного освещения - пляжный футбол стали показывать в 170 странах мира. Это сделало пляжный футбол одним из самых динамично развивающихся видов спорта в мире и привлекло большое количество
-                            рекламы и спонсоров.
-                        </p>
-                        <div class="kinds-of-sports-buttons">
-                            <a href="#">Расписание</a>
-                            <a href="/page/football">Подробнее</a>
-                            <a href="#">Тренировки</a>
-                        </div>
-                    </div>
-                    <img src="img/football_big.png">
+                <div class="col-md-4 kind-item" value="3">
+                    <span>ПЛЯЖНЫЙ ФУТБОЛ</span>
+                    <img src="/img/football.png" width="100%">
                 </div>
             </div>
             <div class="row">
@@ -516,9 +501,9 @@
                             в СССР прошли в 1986 году. В 1989-м разыгран Кубок Москвы и Кубок СССР среди мужчин, советские волейболисты (Виктор Артамонов / Валтс Михелсонс, Игорь Абдрахманов / Александр Овсянников) дебютировали в Мировом туре.
                         </p>
                         <div class="kinds-of-sports-buttons">
-                            <a href="#">Расписание</a>
+                            <a href="/page/our_trainers">Расписание</a>
                             <a href="/page/volleyball">Подробнее</a>
-                            <a href="/page/forsport">Тренировки</a>
+                            <a href="/page/our_trainers">Тренировки</a>
                         </div>
                     </div>
                     <img src="img/volleyball_big.png">
@@ -535,12 +520,31 @@
                             новый вид тенниса и запустила программу соревнований мирового тура. С 2008 года ежегодно под эгидой ITF проводятся Чемпионаты Европы, с 2009 года Чемпионаты Мира, а с 2012 года командный Чемпионат Мира по пляжному теннису.
                         </p>
                         <div class="kinds-of-sports-buttons">
-                            <a href="#">Расписание</a>
+                            <!-- <a href="#">Расписание</a> -->
                             <a href="/page/tennis">Подробнее</a>
-                            <a href="#">Тренировки</a>
+                            <!-- <a href="#">Тренировки</a> -->
                         </div>
                     </div>
                     <img src="img/tennis_big.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="services">
+                    <h3 style="font-size: 32px">Пляжный футбол</h3>
+                    <div>
+                        <h2>История</h2>
+                        <p>
+                            Пляжный футбол зародился в Бразилии и вырос до уровня вида спорта международного значения. Участие в соревнованиях известных спортсменов из большого футбола, таких как француз Эрик Кантона, испанцев Мигель и Хулио Салинаса и бразильцев Ромарио, Жуниора
+                            и Зико способствовало расширению телевизионного освещения - пляжный футбол стали показывать в 170 странах мира. Это сделало пляжный футбол одним из самых динамично развивающихся видов спорта в мире и привлекло большое количество
+                            рекламы и спонсоров.
+                        </p>
+                        <div class="kinds-of-sports-buttons">
+                            <!-- <a href="#">Расписание</a> -->
+                            <a href="/page/football">Подробнее</a>
+                            <!-- <a href="#">Тренировки</a> -->
+                        </div>
+                    </div>
+                    <img src="img/football_big.png">
                 </div>
             </div>
         </div>

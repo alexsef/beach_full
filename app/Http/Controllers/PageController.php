@@ -257,7 +257,7 @@ class PageController extends Controller
             $phone_corp = $request->phone_corp;
             $info_corp = $request->info_corp;
 
-            $subject = "=?utf-8?B?". base64_encode("Заявка от компании"). "?=";
+            $subject = "=?utf-8?B?". base64_encode("Заявка на корпоративное мероприятие от компании"). "?=";
             $message = "Поступила новая заявка <br> Пользователь: {$name_corp}<br>";
             $message .= "Название организации:  {$corp} <br>";
             $message .= "Мобильный номер клиента:  {$phone_corp} <br>";
@@ -265,7 +265,7 @@ class PageController extends Controller
 
             $headers= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=utf-8\r\n";
-            $headers .= 'From: Детский праздник <zakaz@plyazhspb.ru>' . "\r\n";
+            $headers .= 'From: Бизнес мероприятие <zakaz@plyazhspb.ru>' . "\r\n";
 
             mail('zakaz@plyazhspb.ru', $subject, $message, $headers);
 
@@ -288,7 +288,7 @@ class PageController extends Controller
 
             $headers= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=utf-8\r\n";
-            $headers .= 'From: Детский праздник <zakaz@plyazhspb.ru>' . "\r\n";
+            $headers .= 'From: Спортивное мероприятие <zakaz@plyazhspb.ru>' . "\r\n";
 
             mail('zakaz@plyazhspb.ru', $subject, $message, $headers);
 
